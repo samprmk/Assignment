@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+	<p id="demo"></p>
+
+	 <div class="inputbox">
+        <input type="text" required="required" >
+        <span>User Name</span>
+    </div>
+    <div class="inputbox">
+        <input type="text" required="required" >
+        <span>Password</span>
+    </div>
+    <div class="inputbox">
+        <input type="number" required="required" >
+        <span>Age</span>
+    </div>
+    <div class="inputbox">
+        <input type="text" required="required">
+        <span>Phone Number</span>
+    </div><br>
+	<button class="button" onclick="myFunction()">Submit</button>
+	<script > 
+	         function myFunction() 
+	         {
+               var txt;
+               if (confirm("Press a button!")) 
+               {
+                  txt = "Successfully Submitted";
+               } 
+               else 
+              {
+                 txt = "Please Fill in All Field Correctly";
+              }
+                document.getElementById("demo").innerHTML = txt;
+              }
+	</script> 
+
+
+</body>
+</html>
